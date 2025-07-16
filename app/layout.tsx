@@ -17,8 +17,11 @@ const crimson = Crimson_Text({
 })
 
 export const metadata: Metadata = {
-  title: "nothing - A Meditation on Stillness",
+  title: "‎",
   description: "Do nothing. Move nothing. Think nothing. A zen game about the art of being still.",
+    icons: {
+    icon: "/mythology.png",
+  },
 }
 
 export default function RootLayout({

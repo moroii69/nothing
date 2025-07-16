@@ -198,7 +198,7 @@ export default function NothingGame() {
           </div>
         </div>
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-          <p className="text-xs text-muted-foreground/30 font-light" style={{ fontFamily: "Crimson Text, serif" }}>
+          <p className="text-xs text-muted-foreground/40 font-light italic" style={{ fontFamily: "Crimson Text, serif" }}>
             contact developer: kurosen930@gmail.com
           </p>
         </div>
@@ -220,35 +220,15 @@ export default function NothingGame() {
               click to begin. then do absolutely nothing.
             </p>
             <div className="relative flex items-center justify-center gap-4">
-              {/* Modern swirly arrow SVG */}
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="text-muted-foreground/40 animate-pulse"
-              >
-                <path
-                  d="M7 17L17 7M17 7H9M17 7V15"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 2C12 2 8 6 12 10C16 6 12 2 12 2Z"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  opacity="0.6"
-                />
-              </svg>
               <Button
                 onClick={startGame}
                 variant="ghost"
-                className="text-muted-foreground/80 hover:text-foreground hover:bg-muted/20 transition-all duration-300 font-light px-6 py-2"
+                className="text-muted-foreground/80 hover:text-foreground hover:bg-muted/50 transition-all duration-300 font-light px-6 py-2"
               >
+              <div>
+                <img src="/arrow-light.svg" alt="Icon" className="block dark:hidden w-10 h-10" />
+                <img src="/arrow-dark.svg" alt="Icon" className="hidden dark:block w-10 h-10" />
+              </div>
                 start doing nothing
               </Button>
             </div>
